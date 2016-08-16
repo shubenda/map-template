@@ -1,5 +1,6 @@
 // code adapted from https://www.mapbox.com/mapbox.js/example/v1.0.0/markers-with-image-slideshow/
 
+// replace mapbox access token below with your own mapbox access token. Refer to blank for information on accessing your token.
 L.mapbox.accessToken =
 	'pk.eyJ1IjoidnVsaWJyYXJ5Z2lzIiwiYSI6ImFaN2JkSlUifQ.Dl2sTO1mGKK7MCd1ViGPnQ';
 

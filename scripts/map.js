@@ -1,9 +1,10 @@
 // code adapted from https://www.mapbox.com/mapbox.js/example/v1.0.0/markers-with-image-slideshow/
 
+// replace mapbox access token below with your own mapbox access token. Refer to blank for information on accessing your token.
 L.mapbox.accessToken =
 	'pk.eyJ1IjoidnVsaWJyYXJ5Z2lzIiwiYSI6ImFaN2JkSlUifQ.Dl2sTO1mGKK7MCd1ViGPnQ';
 
-// If you do not have a Mapbox key, refer to the readme.md
+// Insert the Mapbox key for your landing page map, refer blank for information on locating the map key. Also change the set view for your region of the world
 var map = L.mapbox.map('map', "vulibrarygis.of23e6p0").setView([52.51, 13.38],
 	12);
 var layer = L.mapbox.featureLayer().addTo(map)
@@ -130,19 +131,23 @@ function getLayer(callback, cloudantView) {
 }
 
 function processLayer(result) {
-	// Add features to the map
+	// Add features to the map. This section let's you incorporate multiple maps
 	var selection_label = $('#layers-dropdown option:selected').text();
+	// The selection label must match your view in Cloudant, refer to blank for more information
 	if (selection_label == "1908") {
+	// this mapbox id should correspond to your georeferenced map	
 		new_id = 'vulibrarygis.l74iic1a'
-	} else if (selection_label == "1920") {
+	} 
+	// else if (selection_label == "1920") {
 		new_id = 'vulibrarygis.l366jopj'
-	} else if (selection_label == "1936") {
+	// } else if (selection_label == "1936") {
 		new_id = 'vulibrarygis.l369lc2l'
-	} else if (selection_label == "1947") {
+	// } else if (selection_label == "1947") {
 		new_id = 'vulibrarygis.l36anlai'
-	} else if (selection_label == "1970") {
-		new_id = 'vulibrarygis.l36db1a5'
-	} else {
+	// } else if (selection_label == "1970") {
+	//	new_id = 'vulibrarygis.l36db1a5'	} 
+		else {
+	// this mapbox id should correspond to your landing page map		
 		new_id = 'vulibrarygis.of23e6p0'
 	};
 	var new_layer = L.mapbox.tileLayer(new_id);

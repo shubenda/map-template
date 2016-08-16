@@ -4,7 +4,7 @@
 L.mapbox.accessToken =
 	'pk.eyJ1IjoidnVsaWJyYXJ5Z2lzIiwiYSI6ImFaN2JkSlUifQ.Dl2sTO1mGKK7MCd1ViGPnQ';
 
-// If you do not have a Mapbox key, refer to the readme.md
+// Insert the Mapbox key for your landing page map, refer blank for information on locating the map key. Also change the set view for your region of the world
 var map = L.mapbox.map('map', "vulibrarygis.of23e6p0").setView([52.51, 13.38],
 	12);
 var layer = L.mapbox.featureLayer().addTo(map)

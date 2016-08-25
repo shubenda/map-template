@@ -193,17 +193,28 @@ function getPoints(cloudantIDs) {
 function processLayer(result) {
 	// Add features to the map
 	var selection_label = $('#layers-dropdown option:selected').text();
+// ACTION ITEM: The selection label must match your view in Cloudant	
 	if (selection_label == "1908") {
+// ACTION ITEM: Replace mapbox id below with the mapbox id that corresponds to your georeferenced map			
 		new_id = 'vulibrarygis.l74iic1a'
-	} else if (selection_label == "1920") {
-		new_id = 'vulibrarygis.l366jopj'
-	} else if (selection_label == "1936") {
-		new_id = 'vulibrarygis.l369lc2l'
-	} else if (selection_label == "1947") {
-		new_id = 'vulibrarygis.l36anlai'
-	} else if (selection_label == "1970") {
-		new_id = 'vulibrarygis.l36db1a5'
-	} else {
+	} 
+// ACTION ITEM: If you would like to incorporate multiple views into your mapping application, remove the double slashes in front of each trio of lines beginning with else if and ending with a curly brace.	
+// ACTION ITEM: Each trio of lines from else if to the end curly brace is equivalent to one Cloudant view and map.
+// ACTION ITEM: Remember to replace your selection label with you view from Cloudant and the mapbox key with one of your own maps
+	// else if (selection_label == "1920") {
+	//	new_id = 'vulibrarygis.l366jopj'
+	// } 
+	// else if (selection_label == "1936") {
+	//	new_id = 'vulibrarygis.l369lc2l'
+	// } 
+	//else if (selection_label == "1947") {
+	//	new_id = 'vulibrarygis.l36anlai'
+	// } 
+	// else if (selection_label == "1970") {
+	//	new_id = 'vulibrarygis.l36db1a5'
+	// } 
+// ACTION ITEM: Replace this mapbox id with the mapbox id for your landing page map.	
+	else {
 		new_id = 'vulibrarygis.of23e6p0'
 	};
 	var new_layer = L.mapbox.tileLayer(new_id);

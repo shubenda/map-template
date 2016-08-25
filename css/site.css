@@ -1,16 +1,17 @@
+/*Customize items in navbar-default or the navbar-brand. Use hex codes for colors and css safe fonts*/
 /* navbar */
 .navbar {
     margin-bottom: 0px;
 }
-
+/*customize the background-color*/
 .navbar-default {
-    background-color: #FFCC00;
+    background-color: #80d4ff;
     border-bottom: 3px solid;
 }
-
+/*customize the color and font-family*/
 .navbar-brand {
-  color: #8B0000 !important;
-  font-family: UnifrakturCook;
+  color: #001a33 !important;
+  font-family: Book Antiqua;
   font-size: 24px; 
 }
 

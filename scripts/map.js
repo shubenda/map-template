@@ -195,12 +195,12 @@ function processLayer(result) {
 	var selection_label = $('#layers-dropdown option:selected').text();
 // ACTION ITEM: The selection label must match your view in Cloudant	
 	if (selection_label == "1908") {
-// ACTION ITEM: Replace mapbox id below with the mapbox id that corresponds to your georeferenced map			
+// ACTION ITEM: Replace mapbox id below with the mapbox id that corresponds to your georeferenced map for the view above			
 		new_id = 'vulibrarygis.l74iic1a'
 	} 
-// ACTION ITEM: If you would like to incorporate multiple views into your mapping application, remove the double slashes in front of each trio of lines beginning with else if and ending with a curly brace.	
+// ACTION ITEM: If you would like to incorporate multiple views into your mapping application, remove the double slashes in front of each trio of lines beginning with else if and ending with the end curly brace.	
 // ACTION ITEM: Each trio of lines from else if to the end curly brace is equivalent to one Cloudant view and map.
-// ACTION ITEM: Remember to replace your selection label with you view from Cloudant and the mapbox key with one of your own maps
+// ACTION ITEM: Remember to replace your selection label with your view from Cloudant and the mapbox key with the corresponding map.
 	// else if (selection_label == "1920") {
 	//	new_id = 'vulibrarygis.l366jopj'
 	// } 

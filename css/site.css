@@ -1,13 +1,14 @@
+/*Customize items in navbar-default or the navbar-brand*/
 /* navbar */
 .navbar {
     margin-bottom: 0px;
 }
-
+/*customize the background-color*/
 .navbar-default {
     background-color: #80d4ff;
     border-bottom: 3px solid;
 }
-
+/*customize the color and font-family*/
 .navbar-brand {
   color: #001a33 !important;
   font-family: Book Antiqua;

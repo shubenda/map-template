@@ -1,0 +1,36 @@
+/*ACTION ITEM: Customize items in navbar-default or the navbar-brand. Use hex codes for colors and css safe fonts*/
+/* navbar */
+.navbar {
+    margin-bottom: 0px;
+}
+/*ACTION ITEM: customize the background-color*/
+.navbar-default {
+    background-color: #80d4ff;
+    border-bottom: 3px solid;
+}
+/*ACTION ITEM:  customize the color and font-family*/
+.navbar-brand {
+  color: #001a33 !important;
+  font-family: Book Antiqua;
+  font-size: 24px; 
+}
+
+#logo {
+  padding-left: 8px;
+  padding-top: 3px;
+}
+
+@media (min-width: 768px) {
+    .navbar-nav.navbar-right:last-child {
+        margin-right: 0px;
+    }
+}
+
+.caption {
+  font-size: 12px;
+  line-height: 15px;
+}
+
+#github {
+  padding-top: 8px;
+}

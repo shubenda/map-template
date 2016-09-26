@@ -1,14 +1,14 @@
-/*Customize items in navbar-default or the navbar-brand. Use hex codes for colors and css safe fonts*/
+/*ACTION ITEM: Customize items in navbar-default or the navbar-brand. Use hex codes for colors and css safe fonts*/
 /* navbar */
 .navbar {
     margin-bottom: 0px;
 }
-/*customize the background-color*/
+/*ACTION ITEM: customize the background-color*/
 .navbar-default {
     background-color: #80d4ff;
     border-bottom: 3px solid;
 }
-/*customize the color and font-family*/
+/*ACTION ITEM:  customize the color and font-family*/
 .navbar-brand {
   color: #001a33 !important;
   font-family: Book Antiqua;

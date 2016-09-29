@@ -5,8 +5,8 @@ L.mapbox.accessToken =
 	'pk.eyJ1IjoieWZiZW5kYSIsImEiOiJjaXNxa3I2bDMwMjIxMm5waHg3YW4xMjViIn0.u_-gWoeFDKHPUJ9HCGZ8BA';
 
 // ACTION ITEM: Insert the Mapbox key for your landing page map, refer blank for information on locating the map key. Also change the set view for your region of the world
-var map = L.mapbox.map('map', "yfbenda.1f9a2ggc").setView([42.20, 71.09],
-	10);
+var map = L.mapbox.map('map', "yfbenda.1f9a2ggc").setView([42.3559,-71.0713],
+	12);
 var layer = L.mapbox.featureLayer().addTo(map)
 
 // Add custom popup html to each marker

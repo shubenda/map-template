@@ -5,7 +5,7 @@ L.mapbox.accessToken =
 	'pk.eyJ1IjoieWZiZW5kYSIsImEiOiJjaXNxa3I2bDMwMjIxMm5waHg3YW4xMjViIn0.u_-gWoeFDKHPUJ9HCGZ8BA';
 
 // ACTION ITEM: Insert the Mapbox key for your landing page map, refer blank for information on locating the map key. Also change the set view for your region of the world
-var map = L.mapbox.map('map', "yfbenda.1f9a2ggc").setView([42.36, -71.06],
+var map = L.mapbox.map('map', "yfbenda.1j6d1m6p").setView([43.169, 124.349],
 	12);
 var layer = L.mapbox.featureLayer().addTo(map)
 
@@ -201,9 +201,9 @@ function processLayer(result) {
 // ACTION ITEM: If you would like to incorporate multiple views into your mapping application, remove the double slashes in front of each trio of lines beginning with else if and ending with the end curly brace.	
 // ACTION ITEM: Each trio of lines from else if to the end curly brace is equivalent to one Cloudant view and map.
 // ACTION ITEM: Remember to replace your selection label with your view from Cloudant and the mapbox key with the corresponding map.
-	// else if (selection_label == "1920") {
-	//	new_id = 'vulibrarygis.l366jopj'
-	// } 
+	else if (selection_label == "1920") {
+		new_id = 'yfbenda.1j6d1m6p'
+	} 
 	// else if (selection_label == "1936") {
 	//	new_id = 'vulibrarygis.l369lc2l'
 	// } 

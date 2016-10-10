@@ -194,7 +194,7 @@ function processLayer(result) {
 	// Add features to the map
 	var selection_label = $('#layers-dropdown option:selected').text();
 // ACTION ITEM: The selection label must match your view in Cloudant	
-	if (selection_label == "Manchuria1") {
+	if (selection_label == "Manchuria 1932") {
 // ACTION ITEM: Replace mapbox id below with the mapbox id that corresponds to your georeferenced map for the view above			
 		new_id = 'yfbenda.1f95k71i'
 	} 

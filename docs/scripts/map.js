@@ -5,7 +5,7 @@ L.mapbox.accessToken =
 	'pk.eyJ1IjoieWZiZW5kYSIsImEiOiJjaXNxa3I2bDMwMjIxMm5waHg3YW4xMjViIn0.u_-gWoeFDKHPUJ9HCGZ8BA';
 
 // ACTION ITEM: Insert the Mapbox key for your landing page map, refer blank for information on locating the map key. Also change the set view for your region of the world
-var map = L.mapbox.map('map', "yfbenda.1j6d1m6p").setView([45.805098, 126.517658],
+var map = L.mapbox.map('map', "yfbenda.1f9a2ggc").setView([45.805098, 126.517658],
 	12);
 var layer = L.mapbox.featureLayer().addTo(map)
 
@@ -196,7 +196,7 @@ function processLayer(result) {
 // ACTION ITEM: The selection label must match your view in Cloudant	
 	if (selection_label == "Manchuria 1932") {
 // ACTION ITEM: Replace mapbox id below with the mapbox id that corresponds to your georeferenced map for the view above			
-		new_id = 'yfbenda.1f95k71i'
+		new_id = 'yfbenda.1j6ek21f'
 	} 
 // ACTION ITEM: If you would like to incorporate multiple views into your mapping application, remove the double slashes in front of each trio of lines beginning with else if and ending with the end curly brace.	
 // ACTION ITEM: Each trio of lines from else if to the end curly brace is equivalent to one Cloudant view and map.
